@@ -1,0 +1,25 @@
+
+<div id="wrapper" class="container">
+  <h1 id="title" class="text-center my-4">{{ title }}</h1>
+
+  <hr>
+  <form class="test-form" [formGroup]="titleForm">
+    <div class="form-group">
+      <input #titleInput formControlName="inputTitle" class="form-control" type="text" placeholder="Introduce new title">
+    </div>
+    <button class="btn btn-success btn-sm" [disabled]="!titleForm.valid" (click)="updateTitle(titleInput.value)">Change title</button>
+    <button class="btn btn-danger btn-sm" (click)="resetTitle()">Reset title</button>
+  </form>
+
+  <nav class="navbar nav-pills justify-content-center">
+    <a href="" routerLink="/search" class="nav-link" routerLinkActive="active">Search</a>
+    <a href="" routerLink="/products" class="nav-link" routerLinkActive="active">Products</a>
+    <!-- <a href="" routerLink="/products" class="nav-link" routerLinkActive="active">Test 2</a>
+    <a href="" routerLink="/products" class="nav-link" routerLinkActive="active">Test 3</a> -->
+  </nav>
+
+</div>
+
+<div id="content-wrapper">
+  <router-outlet></router-outlet>
+</div>
