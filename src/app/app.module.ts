@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProgressbarModule, BsDropdownModule  } from 'ngx-bootstrap';
 import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { ProductsComponent } from './products/products.component';
 import { HeaderComponent } from './header/header.component';
 import { SearcherComponent } from './searcher/searcher.component';
 import { CardsComponent } from './cards/cards.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 
 
 @NgModule({
@@ -20,11 +21,13 @@ import { CardsComponent } from './cards/cards.component';
     ProductsComponent,
     HeaderComponent,
     SearcherComponent,
-    CardsComponent
+    CardsComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    BsDropdownModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
     routing

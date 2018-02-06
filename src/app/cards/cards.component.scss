@@ -1,0 +1,85 @@
+$col-black: #34393B;
+$col-grey: #7F8789;
+$col-silver: #A8ADB3;
+$col-silver-50: #D3D6D9;
+$col-silver-30: #E5E6E8;
+$col-blue: #004666;
+$col-blue-80: #335F7D;
+$col-blue-60: #67879D;
+
+.card {
+  box-shadow: 7px 7px 26px -2px rgba(179,179,179,0.9);
+}
+.card-body {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+
+    li {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      color: $col-grey;
+
+      i {
+        color: $col-black;
+        font-size: 1em;
+        margin-right: 6px;
+        display: inline-block;
+        width: 20px;
+      }
+    }
+  }
+}
+
+.progressor {
+  width: 100%;
+}
+
+.progress {
+  height: 2px;
+  width: 100%;
+
+  .card-progress {
+    display: flex;
+    flex-flow: column nowrap;
+
+    span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.card-brands {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  span {
+    color: $col-silver;
+    font-size: 12px;
+
+    i {
+      color: $col-silver;
+      font-size: 1rem;
+      margin-right: 6px;
+      display: inline-block;
+      width: 20px;
+    }
+  }
+
+}
+

@@ -1,0 +1,25 @@
+.vw-progress-bar {
+  display: block;
+  width: 100%;
+
+  .vw-percentage {
+    color: #A8ADB3;
+    // font-size: .9rem;  // **
+    padding-bottom: 4px;
+    position: relative;
+    // left: 75%;  // **
+  }
+
+  .vw-progress {
+    display: flex;
+    align-items: center;
+    height: 2px;
+    background-color: #E5E6E8;
+
+    .vw-progressed {
+      height: 2px;
+      // width: 75%;  // **
+      // background-color: tomato; // **
+    }
+  }
+}
