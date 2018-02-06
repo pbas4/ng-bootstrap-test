@@ -8,13 +8,19 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
+import { HeaderComponent } from './header/header.component';
+import { SearcherComponent } from './searcher/searcher.component';
+import { CardsComponent } from './cards/cards.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchComponent,
-    ProductsComponent
+    ProductsComponent,
+    HeaderComponent,
+    SearcherComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

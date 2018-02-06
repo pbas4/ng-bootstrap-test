@@ -4,9 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 // Components
 import { SearchComponent } from './search/search.component';
 import { ProductsComponent } from './products/products.component';
+import { SearcherComponent } from './searcher/searcher.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'search', pathMatch: 'full' },
+  { path: '', redirectTo: 'searcher', pathMatch: 'full' },
+  { path: 'searcher', component: SearcherComponent },
   { path: 'search', component: SearchComponent },
   { path: 'products', component: ProductsComponent },
   { path: '**', component: SearchComponent }

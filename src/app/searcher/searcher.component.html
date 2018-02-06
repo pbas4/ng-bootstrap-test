@@ -1,0 +1,132 @@
+<!-- SearchBox -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 px-0">
+      <form class="form-group d-flex align-items-center justify-content-between">
+        <input type="search" name="searcher" class="form-control searchBox">
+        <span class="fa fa-search pl-2 icon-search"></span>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation filter -->
+<!-- <nav class="navbar navbar-light bg-faded borders mt-3" id="filter"> -->
+<div class="container px-0">
+
+  <form class="form-inline d-flex align-items-center justify-content-between borders mt-3" id="filter">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-link btn-sm text-muted" id="dropdownBasic1" ngbDropdownToggle>Marca</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+
+    <span class="br-1-grey"></span>
+
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-link btn-sm text-muted" id="dropdownBasic1" ngbDropdownToggle>Modelo</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+
+    <span class="br-1-grey"></span>
+
+    <form class="form-inline d-flex align-items-center justify-content-between">
+        <span class="mr-2">Cliente</span>
+        <div class="custom-control custom-radio mr-2">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+          <label class="custom-control-label" for="customRadio1">Si</label>
+        </div>
+        <div class="custom-control custom-radio mr-2">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">No</label>
+        </div>
+    </form>
+
+    <span class="br-1-grey"></span>
+
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-link btn-sm text-muted" id="dropdownBasic1" ngbDropdownToggle>Ciudad</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+
+    <span class="br-1-grey"></span>
+
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-link btn-sm text-muted" id="dropdownBasic1" ngbDropdownToggle>Concesión de paso de taller</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+
+    <span class="br-1-grey"></span>
+
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-link btn-sm text-muted" id="dropdownBasic1" ngbDropdownToggle>Nombre de campaña</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Action - 1</button>
+        <button class="dropdown-item">Another Action</button>
+        <button class="dropdown-item">Something else is here</button>
+      </div>
+    </div>
+
+    <span class="br-1-grey"></span>
+
+    <form class="form-inline">
+      <div class="d-flex align-items-center">
+        <span class="mr-2">Persona</span>
+        <div class="custom-control custom-radio mr-2">
+          <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" checked>
+          <label class="custom-control-label" for="customRadio3">Física</label>
+        </div>
+        <div class="custom-control custom-radio mr-2">
+          <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio4">Jurídica</label>
+        </div>
+      </div>
+    </form>
+
+  </form>
+</div>
+<!-- </nav> -->
+
+<!-- Breadcrumb -->
+<div class="container mt-3">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-xs-9 filter-bread d-flex align-items-center">
+      <ul class="my-0">
+        <span>Marca</span>
+        <li>Audi <i class="fa fa-times-circle"></i></li>
+        <li>Volkswagen <i class="fa fa-times-circle"></i></li>
+      </ul>
+      <ul class="my-0">
+        <span>Cliente</span>
+        <li>No<i class="fa fa-times-circle"></i></li>
+      </ul>
+      <ul class="my-0">
+        <span>Persona</span>
+        <li>Jurídica<i class="fa fa-times-circle"></i></li>
+      </ul>
+    </div>
+    <div class="col-xs-3 display-icons d-flex align-items-center">
+      <i class="fa fa-th"></i>
+      <i class="fa fa-th-list ml-2"></i>
+    </div>
+  </div>
+</div>
+
+<div class="container my-3">
+  <app-cards></app-cards>
+</div>
